@@ -10,15 +10,40 @@ body {
   header {
     background-color: #333;
     color: #fff;
-    padding: 2rem;
+    padding: 3rem 1rem;
     text-align: center;
+    border-bottom: 4px solid #00c3ff;
+  }
+  
+  header h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1.5rem 0;
+    color: #bbb;
+  }
+  
+  nav {
+    margin-top: 1rem;
   }
   
   nav a {
-    margin: 0 10px;
+    margin: 0 12px;
     color: #00c3ff;
     text-decoration: none;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ease;
   }
+  
+  nav a:hover {
+    border-color: #00c3ff;
+  }  
   
   section {
     padding: 2rem;
@@ -30,18 +55,59 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
   
-  .project a {
-    display: inline-block;
-    margin-right: 10px;
-    margin-top: 5px;
-    color: #00c3ff;
-    text-decoration: none;
-  }
-  
   footer {
     text-align: center;
     padding: 1rem;
     background: #222;
     color: #ccc;
   }
+
+  #projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .project {
+    background-color: #f9f9f9;
+    border-left: 6px solid #00c3ff;
+    padding: 1.2rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .project:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .project h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .project p {
+    margin: 0.5rem 0 1rem 0;
+  }
+  
+  .project a {
+    background-color: #00c3ff;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .project a:hover {
+    background-color: #009ac2;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
   
